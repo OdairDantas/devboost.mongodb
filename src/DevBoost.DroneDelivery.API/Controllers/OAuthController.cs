@@ -22,7 +22,7 @@ namespace DevBoost.DroneDelivery.API.Controllers
         [Route("login")]
         public async Task<ActionResult> Authenticate([FromBody] LoginViewModel  loginViewModel)
         {
-            var user = await _usuarioQueries.ObterPorCredenciais(loginViewModel.Nome, loginViewModel.Senha);
+            var user = await _usuarioQueries.ObterPorNome(loginViewModel.Nome);
 
             if (user == null)
                 return NotFound(new { message = "Usuário ou senha inválidos" });

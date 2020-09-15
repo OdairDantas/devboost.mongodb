@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="10.0.0" />
+    <PackageReference Include="kafka-net" Version="0.9.0.65" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
     <PackageReference Include="Rebus" Version="6.3.1" />
     <PackageReference Include="System.ComponentModel.Annotations" Version="4.7.0" />

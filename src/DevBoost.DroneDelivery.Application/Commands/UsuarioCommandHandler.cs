@@ -29,6 +29,7 @@ namespace DevBoost.DroneDelivery.Application.Commands
         {
             if (!ValidarComando(message)) return false;
 
+            
             var usuario = _mapper.Map<Usuario>(message);
             usuario.Password = usuario.Password.ObterHash();
             await _usuariorRepository.Adicionar(usuario);

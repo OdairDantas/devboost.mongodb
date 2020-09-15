@@ -33,7 +33,7 @@ namespace DevBoost.DroneDelivery.Application.Commands
             var cliente = _mapper.Map<Cliente>(message);
             await _clienteRepository.Adicionar(cliente);
             var usuario = _mapper.Map<Usuario>(message);
-
+            
             cliente.AdicionarEvento(new ClienteAdiconadoEvent(cliente.Id, cliente.Nome, usuario.UserName, usuario.Password, cliente.Latitude, cliente.Longitude));
             await _clienteRepository.UnitOfWork.Commit();
 

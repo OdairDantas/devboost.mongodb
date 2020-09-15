@@ -5,7 +5,7 @@ namespace DevBoost.DroneDelivery.Application.ViewModels
     [ExcludeFromCodeCoverage]
     public class AdicionarPedidoViewModel
     {
-        
+        public string usuario { get; set; }
         public int Peso { get; set; }
         public string NumeroCartao { get; set; }
         public string Bandeira { get; set; }

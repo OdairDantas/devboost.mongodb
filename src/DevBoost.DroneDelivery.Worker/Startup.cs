@@ -13,6 +13,7 @@ namespace DevBoost.DroneDelivery.Worker
         {
 
             services.AddHostedService<PedidoBackground>();
+            services.AddHostedService<PagamentoBackground>();
         }
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {

@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Presentation", "0 - Presentation", "{F730BBFF-1F9F-4045-93C0-9539A4E848E9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Application", "1 - Application", "{463A9CD9-3AE8-4B27-88F6-9A95675100C7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Domain", "2 - Domain", "{FEBB83B6-6905-439E-825E-346578EC517E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Infrastructure", "3 - Infrastructure", "{1CD32ADA-CB92-4BBD-8A92-CAA1D3AD914E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevBoost.DroneDelivery.Auth.API", "..\DevBoost.DroneDelivery.Auth.API\DevBoost.DroneDelivery.Auth.API.csproj", "{C2980919-FC94-494A-97C9-4660D3053FFB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C2980919-FC94-494A-97C9-4660D3053FFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2980919-FC94-494A-97C9-4660D3053FFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2980919-FC94-494A-97C9-4660D3053FFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2980919-FC94-494A-97C9-4660D3053FFB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C2980919-FC94-494A-97C9-4660D3053FFB} = {F730BBFF-1F9F-4045-93C0-9539A4E848E9}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A6EF8B03-09CF-4F9F-BF29-06A0ADF5A58A}
+	EndGlobalSection
+EndGlobal

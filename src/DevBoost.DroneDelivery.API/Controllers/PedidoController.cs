@@ -57,8 +57,7 @@ namespace DevBoost.DroneDelivery.API.Controllers
         {
 
 
-            var username = User.Identities.FirstOrDefault().Name;
-            var user = await _usuarioQueries.ObterPorNome(username);
+            var user = await _usuarioQueries.ObterPorNome(pedidoViewModel.usuario);
 
             if (user == null)
                 return BadRequest();
@@ -66,7 +65,7 @@ namespace DevBoost.DroneDelivery.API.Controllers
             var cliente = await _clienteQueries.ObterPorId(user.ClienteId);
 
             var retorno = await _mediator.EnviarComando(new AdicionarPedidoCommand(cliente.Id, pedidoViewModel.Valor, pedidoViewModel.Peso, DateTime.Now, pedidoViewModel.Bandeira, pedidoViewModel.NumeroCartao, pedidoViewModel.MesVencimento, pedidoViewModel.AnoVencimento));
-            
+
             if (!retorno) return BadRequest();
 
             return Ok();

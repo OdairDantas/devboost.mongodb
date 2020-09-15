@@ -22,7 +22,6 @@ namespace DevBoost.DroneDelivery.Infrastructure.Data.Repositories
         {
             return await _context.User
                 .Where(u => u.UserName == username)
-                .Include(u => u.Cliente)
                 .FirstOrDefaultAsync();
         }
 
